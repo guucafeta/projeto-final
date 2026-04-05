@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robot — Verificação de Idade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="hex-grid"></div>
+<div class="particles" id="particles"></div>
+
+<div class="wrapper">
+
+  <!-- Logo -->
+  <div class="logo">
+    <div class="logo-title">ROBO WARS</div>
+    <div class="logo-sub">Battle Protocol · 2087</div>
+  </div>
+
+  <!-- Age Verification Card -->
+  <div class="card" id="ageCard">
+
+    <div class="age-icon">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+    </div>
+
+    <div class="age-title">Verificação de Idade</div>
+    <div class="age-subtitle">Para acessar o ROBO WARS, você precisa ter pelo menos <strong>12 anos</strong> de idade.</div>
+
+    <div id="msgAge" class="msg"></div>
+
+    <div class="field">
+      <label for="birthDate">Data de Nascimento</label>
+      <input type="date" id="birthDate" max="" />
+    </div>
+
+    <button class="btn-main cyan" id="btnVerify" onclick="handleAgeVerify(event)">
+      &#9654;&nbsp; Verificar Idade
+    </button>
+
+    <div class="age-notice">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="16" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12.01" y2="8"/>
+      </svg>
+      Este jogo é classificado para maiores de 12 anos.
+    </div>
+
+  </div>
+
+  <!-- Denied Card (hidden by default) -->
+  <div class="card denied-card" id="deniedCard" style="display:none;">
+    <div class="denied-icon">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ff1744" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+      </svg>
+    </div>
+    <div class="denied-title">ACESSO NEGADO</div>
+    <div class="denied-text">
+      Desculpe, você não possui a idade mínima necessária para acessar o ROBO WARS.
+      <br><br>
+      Você precisa ter pelo menos <strong>12 anos</strong> para jogar.
+    </div>
+    <button class="btn-main red" onclick="resetAgeCheck()">
+      &#8592;&nbsp; Tentar Novamente
+    </button>
+  </div>
+
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <div class="status-item"><div class="dot green"></div> Servidor Online</div>
+    <div class="status-item"><div class="dot cyan"></div> <span id="playerCount">2.847</span> Jogadores Ativos</div>
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
