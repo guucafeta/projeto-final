@@ -15,6 +15,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Spritefont2,
 		C3.Behaviors.Physics,
 		C3.Behaviors.bound,
+		C3.Plugins.Text,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetMirrored,
@@ -50,8 +51,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetIgnoreInput,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Mouse.Cnds.IsButtonDown,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.System.Cnds.OnLayoutStart
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.JavaScriptInEvents.Folhadeeventosfases_Event34_Act1,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
 	];
 };
 self.C3_JsPropNameTable = [
@@ -101,7 +103,8 @@ self.C3_JsPropNameTable = [
 	{vocevenceu: 0},
 	{fundojogo: 0},
 	{jogarnovamente: 0},
-	{FonteDeSprites: 0}
+	{FonteDeSprites: 0},
+	{TextoderroteSeusInimigos: 0}
 ];
 
 self.InstanceType = {
@@ -134,5 +137,6 @@ self.InstanceType = {
 	vocevenceu: class extends self.ISpriteInstance {},
 	fundojogo: class extends self.ISpriteInstance {},
 	jogarnovamente: class extends self.ISpriteFontInstance {},
-	FonteDeSprites: class extends self.ISpriteFontInstance {}
+	FonteDeSprites: class extends self.ISpriteFontInstance {},
+	TextoderroteSeusInimigos: class extends self.ITextInstance {}
 }
