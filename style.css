@@ -108,7 +108,7 @@ body.light-mode .btn-theme {
   color: #0057a8;
 }
 
-/* ── MENU MOBILE ── */
+/* ── MENU MOBILE (tradução mantida — termo técnico) ── */
 body.light-mode .nav-mobile-menu {
   background: rgba(255, 255, 255, 0.99);
   border-bottom-color: rgba(0, 87, 168, 0.14);
@@ -133,7 +133,7 @@ body.light-mode .nav-hamburger {
 
 body.light-mode .nav-hamburger span { background: #0057a8; }
 
-/* ── HERO ── */
+/* ── SEÇÃO HERO ── */
 body.light-mode .hero-bg { filter: brightness(0.45) saturate(1.2); }
 
 body.light-mode .hero::after {
@@ -339,7 +339,7 @@ body.light-mode .contato-feedback.error {
 /* ── PARTICLES ── */
 body.light-mode #particles .particle { opacity: 0.18; }
 
-/* ── FORGE / TECH SECTION ── */
+/* ── SEÇÃO FORGE / TECNOLOGIA ── */
 body.light-mode .forge-panel {
   background: #ffffff;
   border-color: rgba(0, 87, 168, 0.2);
@@ -447,7 +447,7 @@ nav {
   right: 16px;
 }
  
-/* ── PROFILE BUTTON ──────────────────────────── */
+/* ── BOTÃO DE PERFIL ───────────────────────── */
 .btn-profile {
   display: flex;
   align-items: center;
@@ -493,7 +493,7 @@ nav {
   letter-spacing: 1px;
 }
  
-/* ── HERO ───────────────────────────────────── */
+/* ── SEÇÃO HERO ────────────────────────────── */
 .hero {
   position: relative;
   height: 100vh;
@@ -575,7 +575,7 @@ nav {
   animation: fadeInUp 0.8s ease 0.9s both;
 }
  
-/* ── PLAY BUTTON ─────────────────────────────── */
+/* ── BOTÃO JOGAR ───────────────────────────── */
 .btn-play {
   position: relative;
   display: inline-flex;
@@ -690,7 +690,7 @@ section {
   margin-bottom: 20px;
 }
  
-/* ── STORY SECTION ───────────────────────────── */
+/* ── SEÇÃO HISTÓRIA ────────────────────────── */
 #historia {
   background: linear-gradient(180deg, var(--dark) 0%, #050e1a 100%);
 }
@@ -763,7 +763,7 @@ section {
 }
  
  
-/* ── PROFILE MODAL ───────────────────────────── */
+/* ── MODAL DE PERFIL ───────────────────────── */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -892,7 +892,7 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
  
-/* ── GAME MODAL ──────────────────────────────── */
+/* ── MODAL DO JOGO ─────────────────────────── */
 .game-modal {
   position: fixed;
   inset: 0;
@@ -970,7 +970,7 @@ body.game-active {
   color: #fff;
 }
  
-/* ── SCROLL REVEAL ───────────────────────────── */
+/* ── ANIMAÇÃO AO ROLAR ─────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -995,7 +995,7 @@ body.game-active {
   }
 }
  
-/* ── AUTH OVERLAY ────────────────────────────── */
+/* ── PAINEL DE AUTENTICAÇÃO ────────────────── */
 .auth-overlay {
   position: fixed;
   inset: 0;
@@ -1031,7 +1031,7 @@ body.auth-active {
   width: 100%;
 }
  
-/* ── AUTH LOGO ───────────────────────────────── */
+/* ── LOGO DA AUTENTICAÇÃO ──────────────────── */
 .auth-logo {
   text-align: center;
   animation: fadeInUp 0.8s ease both;
@@ -1051,7 +1051,7 @@ body.auth-active {
 }
  
  
-/* ── AUTH   ───────────────────────────────── */
+/* ── AUTENTICAÇÃO ──────────────────────────── */
 .auth-card {
   width: 100%;
   max-width: 440px;
@@ -1089,7 +1089,7 @@ body.auth-active {
   border-width: 0 2px 2px 0;
 }
  
-/* ── AUTH TABS ───────────────────────────────── */
+/* ── ABAS DE AUTENTICAÇÃO ────────────────────── */
 .auth-tabs {
   display: flex;
   margin-bottom: 32px;
@@ -1126,7 +1126,7 @@ body.auth-active {
   box-shadow: var(--glow-c);
 }
  
-/* ── AUTH FORM ───────────────────────────────── */
+/* ── FORMULÁRIO DE AUTENTICAÇÃO ────────────── */
 .auth-form-panel {
   display: none;
 }
@@ -1172,7 +1172,7 @@ body.auth-active {
   color: rgba(255, 255, 255, 0.25);
 }
  
-/* ── AUTH BUTTON ─────────────────────────────── */
+/* ── BOTÃO DE AUTENTICAÇÃO ─────────────────── */
 .auth-btn-main {
   width: 100%;
   padding: 14px;
@@ -1224,7 +1224,7 @@ body.auth-active {
   }
 }
  
-/* ── AUTH MESSAGES ────────────────────────────── */
+/* ── MENSAGENS DE AUTENTICAÇÃO ───────────────── */
 .auth-msg {
   padding: 10px 14px;
   border-radius: 3px;
@@ -1247,7 +1247,7 @@ body.auth-active {
   display: block;
 }
  
-/* ── AUTH DIVIDER ────────────────────────────── */
+/* ── DIVISOR DE AUTENTICAÇÃO ─────────────────── */
 .auth-divider {
   text-align: center;
   margin: 18px 0;
@@ -1275,7 +1275,7 @@ body.auth-active {
   right: 0;
 }
  
-/* ── AUTH CARD FOOTER ────────────────────────── */
+/* ── RODAPÉ DO CARD DE AUTENTICAÇÃO ────────── */
 .auth-card-footer {
   text-align: center;
   margin-top: 20px;
@@ -1293,7 +1293,7 @@ body.auth-active {
 }
  
  
-/* ── RESPONSIVE — TABLET (max 900px) ────────────── */
+/* ── RESPONSIVO — TABLET (máx 900px) ────────────── */
 @media (max-width: 900px) {
   nav {
     padding: 0 20px;
@@ -1330,7 +1330,7 @@ body.auth-active {
   }
 }
  
-/* ── RESPONSIVE — MOBILE (max 600px) ────────────── */
+/* ── RESPONSIVO — CELULAR (máx 600px) ───────────── */
 @media (max-width: 600px) {
   /* Navbar: esconde nome do perfil, mantém avatar */
   .btn-profile .pname,
@@ -1390,7 +1390,7 @@ body.auth-active {
     height: 240px !important;
   }
  
-  /* Auth card: menos padding */
+  /* Card de autenticação: menos padding */
   .auth-card {
     padding: 28px 20px;
   }
@@ -1435,7 +1435,7 @@ body.auth-active {
 .nav-hamburger.open span:nth-child(2) { opacity: 0; }
 .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
  
-/* Menu mobile aberto */
+/* Menu mobile aberto (estado ativo) */
 .nav-mobile-menu {
   display: none;
   position: fixed;
@@ -1520,7 +1520,7 @@ body.auth-active {
   margin: 0 auto;
 }
  
-/* ── PERSONA CARD ─────────────────────────────── */
+/* ── CARD DE PERSONAGEM ────────────────────── */
 .persona-card {
   position: relative;
   background: rgba(5, 18, 32, 0.8);
@@ -1550,7 +1550,7 @@ body.auth-active {
   color: #000;
 }
  
-/* Glow interno colorido por personagem */
+/* Brilho interno colorido por personagem */
 .persona-glow {
   position: absolute;
   inset: 0;
@@ -1613,7 +1613,7 @@ body.auth-active {
   margin-bottom: 24px;
 }
  
-/* Stats bars */
+/* Barras de estatísticas */
 .persona-stats {
   display: flex;
   flex-direction: column;
@@ -1833,7 +1833,7 @@ body.auth-active {
   transform: scale(0.98);
 }
  
-/* Feedback de envio */
+/* Feedback de envio do formulário */
 .contato-feedback {
   display: none;
   padding: 10px 14px;

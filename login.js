@@ -1,10 +1,10 @@
-// ── SET MAX DATE (today) ───────────────────────────────────────────────────
+// ── DEFINIR DATA MÁXIMA (hoje) ──────────────────────────────────────────────
 (function () {
   const today = new Date().toISOString().split('T')[0];
   document.getElementById('birthDate').setAttribute('max', today);
 })();
  
-// ── CHECK IF ALREADY VERIFIED ──────────────────────────────────────────────
+// ── VERIFICAR SE JÁ FOI VALIDADO ─────────────────────────────────────────────
 // Se o usuário já passou pela verificação nesta sessão, vai direto pro site
 (function () {
   const verified = sessionStorage.getItem('rw_age_verified');
@@ -13,7 +13,7 @@
   }
 })();
  
-// ── AGE VERIFICATION ───────────────────────────────────────────────────────
+// ── VERIFICAÇÃO DE IDADE ──────────────────────────────────────────────────────
 function handleAgeVerify(e) {
   e.preventDefault();
  
@@ -50,7 +50,7 @@ function handleAgeVerify(e) {
   }, 1200);
 }
  
-// ── RESET AGE CHECK ────────────────────────────────────────────────────────
+// ── REINICIAR VERIFICAÇÃO DE IDADE ───────────────────────────────────────────
 function resetAgeCheck() {
   document.getElementById('deniedCard').style.display = 'none';
   document.getElementById('ageCard').style.display = 'block';
@@ -58,7 +58,7 @@ function resetAgeCheck() {
   clearMsgs();
 }
  
-// ── MESSAGE HELPERS ────────────────────────────────────────────────────────
+// ── FUNÇÕES AUXILIARES DE MENSAGEM ───────────────────────────────────────────
 function clearMsgs() {
   document.querySelectorAll('.msg').forEach(m => { m.className = 'msg'; m.textContent = ''; });
 }
@@ -69,7 +69,7 @@ function showMsg(id, text, type) {
   el.className = 'msg ' + type;
 }
  
-// ── RIPPLE EFFECT ──────────────────────────────────────────────────────────
+// ── EFEITO RIPPLE (onda ao clicar) ───────────────────────────────────────────
 document.querySelectorAll('.btn-main').forEach(btn => {
   btn.addEventListener('click', function (e) {
     const r = document.createElement('span');
@@ -82,18 +82,17 @@ document.querySelectorAll('.btn-main').forEach(btn => {
   });
 });
  
-// ── ENTER KEY SUPPORT ──────────────────────────────────────────────────────
+// ── SUPORTE À TECLA ENTER ─────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     handleAgeVerify(e);
   }
 });
  
-// ── LIVE PLAYER COUNT ──────────────────────────────────────────────────────
+// ── CONTADOR DE JOGADORES EM TEMPO REAL ──────────────────────────────────────
 let count = 2847;
 setInterval(() => {
   count += Math.floor(Math.random() * 5) - 2;
   const el = document.getElementById('playerCount');
   if (el) el.textContent = count.toLocaleString('pt-BR');
 }, 3000);
- 
